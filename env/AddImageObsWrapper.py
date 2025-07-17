@@ -15,7 +15,7 @@ class AddImageObsWrapper(gym.Wrapper):
             shape=self.image_shape,
             dtype=np.uint8,
         )
-        self.camera_id=-1
+        self.camera_id=2
     
     def reset(self,**kwargs):
         obs,info= self.env.reset(**kwargs)
